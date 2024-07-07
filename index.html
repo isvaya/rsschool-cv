@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="assets\img\фавикон.ico" />
+</head>
+<body>
+    <header>
+        <header class="header">
+            <div class="top">
+                <img class="img" src="assets\img\isvaya.png" alt="my photo" />
+                <div class="name-info">
+                    <h1 class="h1">TATYANA PAVLYUCHENKO</h1>
+                    <h3 class="h3">FUTURE FRONT-END DEVELOPER</h3>
+                </div>
+                <nav class="nav-list">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#contacts" class="nav-link">CONTACTS</a></li>
+                        <li class="nav-item"><a href="#summary" class="nav-link">SUMMARY</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">SKILLS</a></li>
+                        <li class="nav-item"><a href="#code" class="nav-link">CODE</a></li>
+                        <li class="nav-item"><a href="#courses" class="nav-link">COURSES</a></li>
+                        <li class="nav-item"><a href="#language" class="nav-link">LANGUAGES</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main">
+                <main class="main">
+                    <section class="info" id="contacts">
+                        <h2>CONTACTS</h2>
+                        <div class="number">
+                            <p>E-mail: tasyana.pulatova@gmail.com</p>
+                            <p>Phone: +998335559535</p>
+                            <p>Telegram: @isvaya</p>
+                            <p>GitHub: isvaya</p>
+                        </div>
+                    </section>
+                    <br/>
+                    <section class="info" id="skills">
+                        <h2>SKILLS</h2>
+                        <ul>
+                            <li>HTML Basic</li>
+                            <li>CSS Basic</li>
+                            <li>Python - Elementary</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Figma</li>
+                            <li>Procreate</li>
+                        </ul>
+                    </section>
+                    <br/>
+                    <section class="info" id="language">
+                        <h2>LANGUAGES</h2>
+                        <p>Russian - Native</p>
+                        <p>English - A2</p>
+                    </section>
+                    <br/>
+                </main>
+                <div class="right">
+                    <div class="summary" id="summary">
+                        <h2>ABOUT MYSELF</h2>
+                        <p class="about-me">I'm a graphic designer. I became interested in this profession because I love making beauty.
+                            Having learned about a front-end development course from the RS-school, I wanted to try myself in a new direction. Previously, I tried to learn the Python programming language on my own.
+                                I am a very goal-oriented person who is constantly looking for something new to learn.
+                                    I set a goal for myself to become a front-end developer.</p>
+                    </div>
+                    <div class="code" id="code">
+                            <h2>CODE EXAMPLE</h2>
+                                <code>
+                                    <pre>
+                                        def is_correct_bracket(text):
+                                        brackets = []
+                                        for char in text:
+                                            if char == '(':
+                                                brackets.append(char)
+                                            elif char == ')':
+                                                if not brackets:
+                                                    return False
+                                            brackets.pop()
+                                        return len(brackets) == 0
+                
+                                    txt = input()
+                
+                                    print(is_correct_bracket(txt))
+                                    </pre>
+                                </code>
+                    </div>
+                    <div class="courses" id="courses">
+                            <h2 class="courses-text">COURSES</h2>
+                            <a class="courses-link" href="https://stepik.org/certificate/4274fb4f0a64715bfc73d0c1f3b5105e0742da54.png?resolution=low">Stepik - Generation python</a>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footer">
+                        <p class="year">Made in 2024</p>
+                        <div class="gh">
+                            <img class="gh-logo" src="assets\img\pngwing.com.png" alt="gh-logo"/>
+                            <a class="gh-text" href="https://github.com/isvaya/">GitHub</a>
+                        </div>
+                        <a href="https://rs.school/courses/javascript-preschool-ru"><img class="rs" src="assets\img\snapedit_1720197661531.png" alt=""></a>
+                    </div>
+                </footer> 
+        </header>   
+</body>
+</html>
