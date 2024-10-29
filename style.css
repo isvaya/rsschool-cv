@@ -1,0 +1,63 @@
+body{
+    background: gray;
+}
+main{
+    background: rgb(41, 40, 40);
+}
+.About{
+    background: white;
+}
+
+.nav {
+    display: flex;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: aliceblue;
+    background: rgb(207, 54, 131);
+}
+
+h2{
+    color: rgb(207, 54, 131);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+h3{
+    color: rgb(116, 110, 113);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+li{
+    margin: 20px;
+}
+.navli{
+    margin: 20px;
+    list-style-type: none;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar{
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.Skills{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.sertify{
+    width: 300px;
+}
+.down{
+    background: rgb(207, 54, 131);
+}
