@@ -63,5 +63,6 @@ function mergeArrays(arr1, arr2) {
 
 ### Languages:
 
-English 
-Russian - Native
+__English__ B1
+
+__Russian__ - Native
