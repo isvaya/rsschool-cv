@@ -5,15 +5,11 @@
 ## Junior Frontend-developer
 ---
 ### Contact information:
-**Phone:** +998 93 555-95-35
-
-**E-mail:** tasyana.pulatova@gmail.com
-
-**Telegram:** @isvaya
-
-**Discord:** @isvaya
-
-[Github](https://github.com/isvaya)
+- **Phone:** +998 93 555-95-35
+- **E-mail:** tasyana.pulatova@gmail.com
+- **Telegram:** @isvaya
+- **Discord:** @isvaya
+- [Github](https://github.com/isvaya)
 
 ---
 
