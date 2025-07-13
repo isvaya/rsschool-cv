@@ -4,17 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-p1CmG6F5HqyUuS3eN1e+/V+zZ+PuYn9Hn9Q+DXZ1VjUjzXa+qDJTQ4RIeD2Ed+nk68jUxYCDt8yTHw6suqG6pQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
   <title>CV</title>
 </head>
 <body>
-  <header>
+  <header class="header wrapper">
     <h1>CV</h1>
+    <nav class="menu">
+      <ul>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#skills">Skills</a></li>
+        <li class="nav-item"><a href="#code-example">Code</a></li>
+        <li class="nav-item"><a href="#education">Education</a></li>
+        <li class="nav-item"><a href="#languages">Languages</a></li>
+        <li class="nav-item"><a href="#contacts">Contacts</a></li> 
+      </ul>
+    </nav>
   </header>
-  <main>
-    <h2>Tatyana Pavlyuchenko</h2>
+  <main class="main wrapper">
+    <section id="left-section">
+      <div class="top">
+        <img class="my-photo" src="images/photo.jpg" alt="my-photo">
+        <h2 class="name-title">Tatyana Pavlyuchenko</h2>
+        <h3>Junior Frontend Developer</h3>
+      </div>
+      <div id="skills">
+        <h2>My skills:</h2>
+        <ul>
+          <li>HTML5, CSS, SASS</li>
+          <li>JavaScript, TypeScript</li>
+          <li>Webpack, Vite</li>
+          <li>React</li>
+          <li>Git, GitHub</li>
+          <li>VS Code</li>
+          <li>Adobe Photoshop, Figma, Procreate, Blender</li>
+        </ul>
+      </div>
+      <div id="education">
+        <h2>Education:</h2>
+        <ul>
+          <li>Lyceum of Foreign Languages "Foreign Philology" Department</li>
+          <li>RS-school course  «JavaScript/Front-end. Stage 0»</li>
+          <li>TypeScript LinkedIn Learning</li>
+          <li>RS-school course  «JavaScript/Front-end. Stage 2»</li>
+          <li>React (in process)</li>
+        </ul>
+      </div>
+      <div id="languages">
+        <h2>Languages:</h2>
+        <p>Russian - Native</p>
+        <p>English - B1</p>
+      </div>
+    </section>
+    <section id="right-section">
+      <div id="about">
+        <h2>🌸 Brief information about me 🌸</h2>
+        <p>I am a beginner front-end developer, I have been in this industry for over a year now.
+          Previously, I was engaged in design and digital art. I chose the direction of front-end development because it is closely related to design.
+          Now front-end is my new professional direction and area of ​​constant development.
+          In addition to programming, I have a number of other hobbies - reading books, a constant desire for self-development, video games, long walks and cooking: I love to cook deliciously and please my loved ones with my dishes.</p>
+      </div>
+      <div id="code-example">
+        <h2>Code Example</h2>
+        <pre>
+          <code>
+            Array.prototype.filter = function(callback, thisArg) {
+              const result = [];
+              const originalLength = this.length;
+            
+              for (let i = 0; i < originalLength; i++) {
+                if (i in this) {
+                  const value = this[i];
+                  if (callback.call(thisArg, value, i, this)) {
+                    result.push(value);
+                  }
+                }
+              }
+            
+              return result;
+            };
+          </code>
+        </pre>
+      </div>
+      <div id="contacts">
+        <h2>Contacts:</h2>
+        <ul class="ul-contacts">
+          <li class="contact-item"><i class="fas fa-phone"></i><strong>Phone:</strong> + (998) 33 555 95 35</li>
+          <li class="contact-item"><i class="fab fa-discord"></i><strong>Discord:</strong> @isvaya</li>
+          <li class="contact-item"><i class="fab fa-telegram"></i><strong>Telegram:</strong> @isvaya</li>
+          <li class="contact-item"><i class="fas fa-envelope"></i><strong>E-mail:</strong> tasyana.pulatova@gmail.com</li>
+        </ul>
+      </div>
+    </section>
   </main>
-  <footer>
-    <p>Thank you!</p>
+  <footer class="footer wrapper">
+    <div class="github">
+      <a href="https://github.com/isvaya" target="_blank"><img class="gh-logo" src="images/github-logo.png" alt="gh-logo">Github</a>
+    </div>
+    <h3>2025</h3>
+    <div class="school">
+      <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank"><img class="rs-logo" src="images/rs-logo.png" alt="rs-logo">RS-School</a>
+    </div>
   </footer>
 </body>
 </html>
