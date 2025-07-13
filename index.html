@@ -11,7 +11,65 @@
     <h1>CV</h1>
   </header>
   <main>
-    <h2>Tatyana Pavlyuchenko</h2>
+    <section>
+      <h2>Tatyana Pavlyuchenko</h2>
+      <h3>Junior Frontend Developer</h3>
+    </section>
+    <section>
+      <h4>Brief information about me:</h4>
+      <p>I am a beginner front-end developer, I have been in this industry for over a year now.
+        Previously, I was engaged in design and digital art. I chose the direction of front-end development because it is closely related to design.
+        Now front-end is my new professional direction and area of ​​constant development.
+        In addition to programming, I have a number of other hobbies - reading books, a constant desire for self-development, video games, long walks and cooking: I love to cook deliciously and please my loved ones with my dishes.</p>
+    </section>
+    <section>
+      <h4>My skills:</h4>
+      <ul>
+        <li>HTML5, CSS, SASS</li>
+        <li>JavaScript, TypeScript</li>
+        <li>Webpack, Vite</li>
+        <li>React</li>
+        <li>Git, GitHub</li>
+        <li>VS Code</li>
+        <li>Adobe Photoshop, Figma, Procreate, Blender</li>
+      </ul>
+    </section>
+    <section>
+      <h4>Code Example</h4>
+      <pre>
+        <code>
+          Array.prototype.filter = function(callback, thisArg) {
+            const result = [];
+            const originalLength = this.length;
+          
+            for (let i = 0; i < originalLength; i++) {
+              if (i in this) {
+                const value = this[i];
+                if (callback.call(thisArg, value, i, this)) {
+                  result.push(value);
+                }
+              }
+            }
+          
+            return result;
+          };
+        </code>
+      </pre>
+    </section>
+    <section>
+      <h4>Courses:</h4>
+      <ul>
+        <li>RS-school course  «JavaScript/Front-end. Stage 0»</li>
+        <li>TypeScript LinkedIn Learning</li>
+        <li>RS-school course  «JavaScript/Front-end. Stage 2»</li>
+        <li>React (in process)</li>
+      </ul>
+    </section>
+    <section>
+      <h4>Languages:</h4>
+      <p>Russian - Native</p>
+      <p>English - B1</p>
+    </section>
   </main>
   <footer>
     <p>Thank you!</p>
