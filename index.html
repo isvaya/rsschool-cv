@@ -7,22 +7,32 @@
   <title>CV</title>
 </head>
 <body>
-  <header>
+  <header class="wrapper">
     <h1>CV</h1>
+    <nav class="menu">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="skills">Skills</a></li>
+        <li><a href="code-example">Code</a></li>
+        <li><a href="education">Education</a></li>
+        <li><a href="Languages">Languages</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <section>
-      <h2>Tatyana Pavlyuchenko</h2>
+  <main class="wrapper">
+    <section id="top-section">
+      <img src="images/photo.jpg" alt="my-photo">
+      <h2 class="name-title">Tatyana Pavlyuchenko</h2>
       <h3>Junior Frontend Developer</h3>
     </section>
-    <section>
+    <section id="about">
       <h4>Brief information about me:</h4>
       <p>I am a beginner front-end developer, I have been in this industry for over a year now.
         Previously, I was engaged in design and digital art. I chose the direction of front-end development because it is closely related to design.
         Now front-end is my new professional direction and area of ​​constant development.
         In addition to programming, I have a number of other hobbies - reading books, a constant desire for self-development, video games, long walks and cooking: I love to cook deliciously and please my loved ones with my dishes.</p>
     </section>
-    <section>
+    <section id="skills">
       <h4>My skills:</h4>
       <ul>
         <li>HTML5, CSS, SASS</li>
@@ -34,7 +44,7 @@
         <li>Adobe Photoshop, Figma, Procreate, Blender</li>
       </ul>
     </section>
-    <section>
+    <section id="code-example">
       <h4>Code Example</h4>
       <pre>
         <code>
@@ -56,7 +66,7 @@
         </code>
       </pre>
     </section>
-    <section>
+    <section id="education">
       <h4>Courses:</h4>
       <ul>
         <li>RS-school course  «JavaScript/Front-end. Stage 0»</li>
@@ -65,13 +75,13 @@
         <li>React (in process)</li>
       </ul>
     </section>
-    <section>
+    <section id="Languages">
       <h4>Languages:</h4>
       <p>Russian - Native</p>
       <p>English - B1</p>
     </section>
   </main>
-  <footer>
+  <footer class="wrapper">
     <p>Thank you!</p>
   </footer>
 </body>

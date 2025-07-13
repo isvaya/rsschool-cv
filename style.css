@@ -2,3 +2,11 @@ body {
   background: rgb(30, 29, 30);
   color: aliceblue;
 }
+
+.wrapper {
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
