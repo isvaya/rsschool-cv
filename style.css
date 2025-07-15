@@ -8,8 +8,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+main {
+  height: auto;
+}
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,8 +63,8 @@ h1 {
   flex-direction: column;
   /* justify-content: space-evenly; */
   background: rgb(94, 92, 94);
-  height: 1100px;
-  width: 40%;
+  height: auto;
+  width: 33.7%;
   gap: 10px;
 }
 
@@ -76,7 +79,7 @@ h1 {
 
 #right-section {
   background: rgb(240, 235, 241);
-  height: 1100px;
+  height: 1290px;
   width: 60%;
   padding: 0px 40px;
   color: rgb(21, 20, 21);
@@ -201,7 +204,7 @@ footer {
 }
 
 .rs-logo {
-  width: 30px;
+  width: 80px;
   border-radius: 5px;
 }
 
@@ -218,7 +221,6 @@ footer {
 #contacts {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: center;
   margin-top: 33px;
 }
@@ -284,4 +286,34 @@ footer {
 
 .icons-logo {
   width: 30px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 800px;
+}
+
+.projects h2 {
+  text-transform: uppercase;
+  width: 95%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(21, 20, 21);
+}
+
+.projects a {
+  text-decoration: none;
+  color: rgb(72, 16, 71);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.projects img {
+  width: 40px;
 }
