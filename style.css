@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   background: rgb(30, 29, 30);
   color: aliceblue;
   margin: 0 auto;
+  padding: 0;
   width: 1280px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
+main {
+  height: auto;
+  flex: 1;
+}
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,16 +66,16 @@ h1 {
 }
 
 .my-photo {
-  width: 300px;
+  width: 435px;
 }
 
 #left-section {
   display: flex;
   flex-direction: column;
   /* justify-content: space-evenly; */
-  background: rgb(32, 21, 34);
-  height: 1100px;
-  width: 300px;
+  background: rgb(94, 92, 94);
+  height: auto;
+  width: 33.7%;
   gap: 10px;
 }
 
@@ -75,9 +89,9 @@ h1 {
 }
 
 #right-section {
-  background: rgb(247, 211, 251);
-  height: 1100px;
-  width: 980px;
+  background: rgb(240, 235, 241);
+  height: 1290px;
+  width: 60%;
   padding: 0px 40px;
   color: rgb(21, 20, 21);
   display: flex;
@@ -104,44 +118,82 @@ footer {
   margin: 0;
 }
 
-.top h3 {
+.top-right h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  width: 200px;
+  margin-bottom: 10px;
+  line-height: 1em;
+}
+
+.top-right h3 {
   padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+  width: 250px;
+  margin-top: 0px;
 }
 
 #skills,
-#education,
 #languages {
   padding: 0px 10px;
+}
+
+#skills h2 {
+  width: 95%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(240, 238, 240);
+}
+
+#skills ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#skills ul li p {
+  width: 400px;
+  margin-top: 0;
+  /* width: 95%;
+  padding-bottom: 5px;
+  border-bottom: 2px dashed rgb(21, 20, 21); */
 }
 
 #code-example {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  border: 4px solid rgba(39, 19, 46, 0.1);
-  border-radius: 10px;
   width: 800px;
-  margin-top: 50px;
-  /* background-color: rgba(250, 249, 250, 0.7); */
 }
 
-#code-example:hover {
-  background: rgba(255, 255, 255, 0.423);
+#code-example pre {
+  margin: 0;
 }
 
 #about p {
   font-size: 18px;
-  text-align: center;
+  text-align: justify;
+  width: 95%;
 }
 
 #about {
   width: 800px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
+#about h2,
+#code-example h2 {
+  width: 95%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(21, 20, 21);
+}
 .footer {
   display: flex;
   flex-direction: row;
@@ -163,7 +215,7 @@ footer {
 }
 
 .rs-logo {
-  width: 30px;
+  width: 80px;
   border-radius: 5px;
 }
 
@@ -180,9 +232,8 @@ footer {
 #contacts {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: center;
-  margin-top: 130px;
+  margin-top: 33px;
 }
 
 .contact-item {
@@ -195,9 +246,85 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 200px;
-  row-gap: 20px;
+  row-gap: 15px;
 }
 
-code {
-  font-size: 18px;
+.ul-contacts li {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.top-right-container {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+
+#education {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 800px;
+}
+
+#education h2 {
+  text-transform: uppercase;
+  width: 95%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(21, 20, 21);
+}
+
+#education ul li {
+  list-style: none;
+  width: 300px;
+}
+
+#education ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 10px;
+  margin-top: 0;
+}
+
+#languages h2 {
+  width: 95%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(240, 238, 240);
+}
+
+.icons-logo {
+  width: 30px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 800px;
+}
+
+.projects h2 {
+  text-transform: uppercase;
+  width: 95%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(21, 20, 21);
+}
+
+.projects a {
+  text-decoration: none;
+  color: rgb(72, 16, 71);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.projects img {
+  width: 40px;
 }
